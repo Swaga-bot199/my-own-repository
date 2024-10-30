@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing.js Animation</title>
+    <script src="processing.js"></script>
+</head>
+<body>
+    <canvas id="mycanvas"></canvas>
+    <script type="application/processing" target="mycanvas">
+        void setup() {
+            size(400, 400);
+            frameRate(30); // Controls the animation speed
+        }
+
+        void draw() {
+            background(255); // Set the background color (white)
+            fill(0);         // Set the fill color (black)
+            ellipse(mouseX, mouseY, 50, 50); // Draw a circle following the mouse
+        }
+    </script>
+</body>
+</html>
